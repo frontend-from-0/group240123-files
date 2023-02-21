@@ -1,0 +1,44 @@
+header, main, footer {
+  height: 15px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+/* In CSS, to selec an element by class, you type .class-name */
+.my-class-name {
+  color: green;
+}
+
+/* In CSS, to selec an element by id, you type #id-name */
+#my-id {
+  background-color: rgba(0,0,0, 0.1);
+}
+
+/* COLORS IN CSS
+Standard colors: e.g. red, blue, yellow
+HEX: #fff, #000, #a0a0a0 usually used
+RGB: rgb(0,0,0);
+RGBA: rgba(0,0,0, 0.5);
+HSL, HSLA
+*/
+a {
+  color:#00f0f0;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  font-size: 30px;
+  color: pink;
+}
+
+p::first-line {
+  background-color: white;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}

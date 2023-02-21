@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 2</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles2.css">
+    <!-- <style>
+      .my-class-name {
+        color: yellow;
+      }
+    </style> -->
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section></section>
+    </main>
+    <footer></footer>
+    <!-- Don't use inline styles! -->
+    <p class="my-class-name">Page</p>
+    <div id="content">
+      <!-- JS code here to get the div element by id and then attach p elements to it -->
+      <p id="my-id" class="my-class-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet necessitatibus recusandae, sunt, iste, ea perferendis minima eos excepturi tenetur placeat iure delectus magnam consequatur? Adipisci enim hic voluptas itaque!</p>
+      <p id="my-id">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit qui beatae, cupiditate iste minima aliquam cum eum perferendis nostrum quae, a et est corporis corrupti rem quam. Ut, a magnam!</p>
+    </div>
+    <a href="./page2.html">Page 2</a>
+    <form action="#">
+      <!-- Add id of input as "for" attribute of label -->
+      <label for="email">Email address</label>
+      <input type="text" id="email" name="email">
+
+
+      <label for="phone">Phone</label>
+      <!-- Name is used to name a value that will be filled in the input and then sent to the server. See sampledata.json file for the example of what the server would receive in our case. The sampledata.json is just an example and is not connected to this HTML file or the form element in any way right now. -->
+      <input type="text" id="phone" name="phone">
+
+      <!-- Input is a self-closing element -->
+      <input type="submit">
+      <!-- Code below is also valid but you don't have to add / in self closing elements -->
+      <!-- <input type="submit" /> -->
+      
+      <!-- You usually use one submit button per form. I added input of type submit (see above) and button here just for the sake of example. -->
+      <button>Submit <img src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""></button>
+    </form>
+  </body>
+</html>
