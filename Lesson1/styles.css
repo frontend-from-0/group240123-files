@@ -1,0 +1,14 @@
+p {
+  /* THis is how you add comments in CSS */
+  /* property-name: value; */
+  background-color: brown;
+}
+
+/* To select a class, type .class-name {} */
+.my-own-class-name {
+  background-color: blue;
+}
+
+.my-own-class-name-2 {
+  background-color: yellow;
+}
