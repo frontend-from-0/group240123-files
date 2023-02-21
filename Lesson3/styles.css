@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.div1 {
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+p {
+  border: 1px solid black;
+}
+
+span {
+  /* It's not possible to set height, width, etc. of inline level elements. These values are only accepted by block and inline-block elements */
+  /* height: 100px;
+  width: 200px; */
+  border: 1px solid black;
+}
+
+a {
+  border: 1px solid black;
+  display: inline-block;
+  /* display: block;
+  display: inline; */
+  min-width: 48px;
+  /* 10px for top and bottom + 25px for left and right */
+  padding: 10px 25px;
+}
+
+body {
+  background-color: grey;
+}
+
+#box-model-example {
+  height: 300px;
+  width: 883px;
+  background-color: blue;
+  /* Color for text */
+  color: white;
+  /* Color of the border is set in border property */
+  border: 20px solid green;
+/* top right bottom left */
+  padding: 15px 15px 15px 15px;
+/* top sides bottom */
+  margin: 10px 15px 20px;
+}
+
+/* 
+Absolute
+px - commmonly used
+
+Relative values
+em - font-size, but can used for padding, margin, border-size as well (less common)
+p { 
+  font-size: 0.8rem; - Not 8px but 0.8 of the browser's standard font-size
+}
+rem - font-size, but can used for padding, margin, border-size as well (less common)
+html {
+  font-size: 10px;
+}
+p { 
+  font-size: 0.8rem; - 8px
+}
+
+% commonly used for width (min-, max-width), height (min-, max-height)
+When using % for height and(or) width, make sure to set height and(or) width of the parent element, otherwise it won't work!
+vh - view height (height of the current screen)
+vw - view width (width of the current screen)
+
+*/
