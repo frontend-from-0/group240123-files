@@ -1,0 +1,97 @@
+/* 
+Background color: #F1F2F3
+Google button color: #FFFFFF
+Github button color: #2F3337 
+Facebook button color: #385499
+Primary color: #0074CC
+Shadow for white card on the right:
+box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 24px 0px, rgba(0, 0, 0, 0.05) 0px 20px 48px 0px, rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background: #F1F2F3;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  /* Now main elements is a "flexbox container" */
+  display: flex; 
+  height: 100vh;
+}
+
+.main-left, .main-right {
+  border: 1px solid black;
+}
+
+.main-left {
+  width: 60vw;
+  display: flex;
+  /* flex-direction: row; this is horizontal axis */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-right {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-left-content {
+  margin-right: 48px;
+}
+
+.sign-up-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+font-size: 27px;
+}
+
+.text-medium {
+font-size: 15px;
+}
+
+.text-small {
+  font-size: 13px;
+}
+/* Relative values: 50%, 100%, 100vw, 100vh etc. */
+
+ul {
+  list-style-type: none;
+}
+
+
+text-border:focus {
+  border: 1px solid pink;
+}
+
+.link {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.form {
+  height: 500px;
+  background-color: grey;
+}
