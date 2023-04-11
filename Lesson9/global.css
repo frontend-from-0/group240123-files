@@ -32,4 +32,41 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr; 
+  grid-template-rows: 100px 1fr 500px;
+  grid-template-areas: 
+  "header header header saffet"
+  "sidebar-left content sidebar-right saffet"
+  "sidebar-left footer footer footer";
+  
+}
+
+/* For the purpose of this exercise, let's assume that the header 100px heigh, footer 500px heigh. */
+.header {
+ /* grid-column: 1 / -1; */
+ grid-area: header;
+}
+
+.footer{
+  grid-area: footer;
+  /* grid-column: 2 / span 4; */
+}
+.sidebar-left{
+  grid-area: sidebar-left;
+  /* grid-column: 1 / 2;
+  grid-row: 2 / -1; */
+} 
+.sidebar-right{
+  grid-area: sidebar-right;
+  /* grid-column: 3 /-1; */
+}
+
+.content {
+  grid-area: content;
+  /* grid-column: 2 / 3; */
+}
+
+.saffet {
+  grid-area: saffet;
 }
