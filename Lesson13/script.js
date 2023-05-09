@@ -1,8 +1,22 @@
 // 1. Declare a variable x and initialize it to 5.
 // Declare a variable y and initialize it to 3.
 // Declare a variable z and initialize it to the sum of x and y.
+// var, const, let
+const x = 5;
+const y = 3;
+const z = x + y;
+console.log('Exercise 1:', z);
 
 console.log('------------------------');
+const name = "onur";
+const age = 32;
+const phrase = "Hello world!";
+const myAge = `${phrase} My name is ${name}. I'm ${age} years old.`;
+const myAge2 = phrase + " My name is " + name + ". I'm " + age + " years old.";
+
+console.log('Exercise 2:',myAge);
+console.log('Exercise 2.2:',myAge2);
+
 // ---
 // 2. Declare a variable name and initialize it to your name as a string.
 // Declare a variable age and initialize it to your age as a number.
@@ -15,6 +29,14 @@ console.log('------------------------');
 // Declare a variable number2 and initialize it to 3.
 // Declare a variable result and initialize it to the quotient of number1 divided by number2.
 // Declare a variable number3 and initialize it to the difference between number1 and number2.
+const number1 = 10;
+const number2 = 3;
+const result = number1 / number2;
+
+const number3 = number1 - number2; 
+
+console.log('Exercise 3.1:',result);
+console.log('Exercise 3.2:',number3);
 
 console.log('------------------------');
 // ---
@@ -22,20 +44,40 @@ console.log('------------------------');
 // Declare a variable lastName and initialize it to your last name as a string.
 // Declare a variable fullName and initialize it to the concatenation of firstName and lastName.
 
+const firstName = "Salih";
+const lastName = "Kus";
+const fullName = firstName + " " + lastName;
+console.log('Exercise 4:', 'My Full Name is', fullName);
+
 console.log('------------------------');
+
 // ---
 // 5. Declare a variable number4 and initialize it to 7.
 // Declare a variable number5 and initialize it to 2.
 // Declare a variable result2 and initialize it to the product of number4 and number5 (multiply numbers).
-
+const number4 = 7;
+const number5 = 2;
+const result2 = number4 * number5;
+console.log('Exercise 5:', result2);
+ 
 console.log('------------------------');
 // ---
 // 6. Declare a variable PI and initialize it to the value of PI (3.14159). There's a built in function to do that (Math.PI).
+
+const pi = Math.PI;
+console.log('Exercise 6:', pi);
 
 console.log('------------------------');
 // ---
 // 7. Declare a variable counter and initialize it to 0.
 // Increment the counter variable by 1 using 3 different ways to increment numbers.
+let counter = 0;
+counter++;
+console.log('Exercise 7.1:', counter);
+++counter;
+console.log('Exercise 7.2:', counter);
+counter = counter + 1;
+console.log('Exercise 7.3:', counter);
 
 console.log('------------------------');
 // ---
@@ -44,7 +86,7 @@ console.log('------------------------');
 
 console.log('------------------------');
 // ---
-// 9. Declare a variable TODAY_DATE and initialize it to the current date using the built in Date object.
+// 9. Declare a variable TODAY_DATE and initialize it to the current date using the built in Date object. (Optional)
 
 
 // Note: When you create a new Date object using a string representation of a date and time, such as 'January 1, 2000', the resulting date and time are interpreted based on the timezone of the environment in which the code is running.
@@ -55,10 +97,20 @@ console.log('------------------------');
 console.log('------------------------');
 // ---
 // 10. Declare a variable number6 and initialize it to 6. Declare a variable number7 and initialize it to `++number6` (number6 incremented using prexif ++ operator). Log both values to the console.
+let number6 = 6;
+// First, number6 got incremented, then number7 got value of number6 (it was 7);
+const number7 = ++number6; // 7
+console.log('Exercise 10:', number6, number7);
+const number99 = ++number6 + 1; // 8
 
+console.log('Exercise 10:', number6, number7, number99);
 console.log('------------------------');
 // ---
 // 11. Declare a variable number8 and initialize it to 8. Declare a variable number9 and initialize it to `number8++` (number8 incremented using postfix ++ operator). Log both values to the console.
+let number8 = 6;
+// First, number9 got value of number8 (it was 6), then number8 got incremented;
+let number9 = number8 + 1 ; //6
+console.log('Exercise 11:', number8, number9);
 
 console.log('------------------------');
 
@@ -73,7 +125,8 @@ console.log('------------------------');
 
 // BONUS: generate random number in a range from 0 to 10
 // Use Math.floor() and Math.random() to do that.
-
+// Math.random() generate random number between 0 and 1 (not including 1)
+// Math.floor() 
 
 
 
