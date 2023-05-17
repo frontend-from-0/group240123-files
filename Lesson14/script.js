@@ -1,3 +1,5 @@
+// From Lesson13: generate random number in a range from 0 to 10
+
 // 1. Use the `length` property to find the length of a string and print it to the console.
 const stringExercise1 = 'Object-oriented programming is a powerful paradigm.';
 
