@@ -91,3 +91,11 @@ const stringExercise15 = "    Hello world    ";
 console.log('------------------------');
 // 16. Extract the price and currency from a string below using "slice" method and print it to console.
 const planPriceString = "Premium plan - 9.99 USD/month."; // Should return "9.99 USD"
+
+
+
+const text = "Software design patterns can help simplify complex can help systems.";
+const substring = "can help";
+const replacement = "help";
+const modifiedText = text.split(substring).join(replacement);
+console.log(modifiedText);
